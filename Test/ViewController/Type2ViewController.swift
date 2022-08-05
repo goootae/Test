@@ -10,10 +10,18 @@ import UIKit
 
 class Type2ViewController:UIViewController{
     
+    @IBOutlet weak var btnClose: UIButton!
+    var param:Bool = false
+    
     // 뷰컨트롤러가 호출이 되었을때 (1번) 최초 한번
     override func viewDidLoad() {
         // 화면 초기화
         super.viewDidLoad()
+        
+        self.btnClose.addTarget(self, action: #selector(self.btnCloseEvent) , for: .touchUpInside)
+        
+        self.btnClose.isHidden = self.param
+        
     }
     
     // 사용자한태 보여주기 직전에 호출 (여러번) 보여지는 순간에 수행
@@ -35,6 +43,11 @@ class Type2ViewController:UIViewController{
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
     }
+    
+    @objc func btnCloseEvent(){
+        self.dismiss(animated: true)
+    }
+    
     
     // 1. View1 : viewDidLoad -> viewWillAppear -> viewDidAppear
     // 2. View1 에서 화면 호출 이벤트

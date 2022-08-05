@@ -145,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="407" y="-58"/>
+            <point key="canvasLocation" x="872" y="-224"/>
         </scene>
         <!--Type2 View Controller-->
         <scene sceneID="qy7-KP-BU6">
@@ -174,10 +174,13 @@
                             <constraint firstItem="MEx-kh-fcE" firstAttribute="centerX" secondItem="FKv-hW-Skh" secondAttribute="centerX" id="yAw-Eg-5GC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnClose" destination="MEx-kh-fcE" id="377-DX-HPh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="20M-k2-mh0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1174" y="-58"/>
+            <point key="canvasLocation" x="1614" y="-224"/>
         </scene>
     </scenes>
     <resources>
